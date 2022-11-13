@@ -6,7 +6,7 @@ const Footer = () => {
 		<div className="bg-[#1D1D1E]">
 			<footer className="footer p-10 max-w-[1240px] mx-auto text-[#ffffff]">
 				<div>
-					<img src="logo-white.svg" alt="logo" className="md:mb-[70px]" />
+					<img src="logo-white.svg" alt="logo" className="w-[10rem] md:w-auto md:mb-[70px]" />
 					<div className="hidden md:block">
 						<div className="flex items-center gap-[36px] mb-[50px]">
 							<img src="/facebook.svg" alt="facebook" />
