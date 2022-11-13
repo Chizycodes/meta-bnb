@@ -5,7 +5,7 @@ const NavBar = () => {
 	return (
 		<div className="navbar bg-white py-5 mx-auto w-full max-w-[1240px] px-3">
 			<div className="navbar-start">
-				<div className="dropdown w-[30px] h-[30px]">
+				<div className="dropdown flex items-center">
 					<label tabIndex={0} className="btn btn-ghost md:hidden p-0">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,12 @@ const NavBar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<div className="btn  sm:px-[25px] py-[15px] outline-none normal-case border-none text-[#ffffff] grad-bg">
+				<label
+					htmlFor="connect-wallet"
+					className="btn sm:px-[25px] py-[15px] outline-none normal-case border-none text-[#ffffff] grad-bg"
+				>
 					Connect wallet
-				</div>
+				</label>
 			</div>
 		</div>
 	);

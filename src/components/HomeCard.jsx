@@ -5,7 +5,7 @@ const HomeCard = ({ item }) => {
 	return (
 		<div
 			style={{ background: 'linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%)' }}
-			className="p-4 rounded-[15px] border border-[#D7D7D7] w-[280px] cursor-pointer"
+			className="p-4 rounded-[15px] border border-[#D7D7D7] w-[280px] cursor-pointer hover:shadow-md"
 		>
 			<div className="mb-4 w-full h-[265px]">
 				<img src={item.image} alt="home" className="h-full w-full" />
