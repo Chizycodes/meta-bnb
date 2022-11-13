@@ -3,23 +3,23 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 	return (
-		<div className="navbar bg-white py-5 mx-auto w-full max-w-[1240px] px-5">
+		<div className="navbar bg-white py-5 mx-auto w-full max-w-[1240px] px-3">
 			<div className="navbar-start">
-				<div className="dropdown">
-					<label tabIndex={0} className="btn btn-ghost md:hidden">
+				<div className="dropdown w-[30px] h-[30px]">
+					<label tabIndex={0} className="btn btn-ghost md:hidden p-0">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="h-5 w-5"
+							className="h-[30px] w-[30px]"
 							fill="none"
-							viewBox="0 0 24 24"
+							viewBox="0 0 30 30"
 							stroke="currentColor"
 						>
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
 						</svg>
 					</label>
-					<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52">
+					<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#ffffff] rounded-box w-52">
 						<li>
-							<Link to="#">Home</Link>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
 							<Link to="/place-to-stay">Place to stay</Link>
@@ -53,7 +53,7 @@ const NavBar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<div className="btn px-[25px] py-[15px] outline-none normal-case border-none text-[#ffffff] grad-bg">
+				<div className="btn  sm:px-[25px] py-[15px] outline-none normal-case border-none text-[#ffffff] grad-bg">
 					Connect wallet
 				</div>
 			</div>

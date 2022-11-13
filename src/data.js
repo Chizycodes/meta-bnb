@@ -1,0 +1,18 @@
+export const homeList = [
+	{ id: 1, image: 'home-images/image1.svg', home: true },
+	{ id: 2, image: 'home-images/image2.svg', home: true },
+	{ id: 3, image: 'home-images/image3.svg', home: true },
+	{ id: 4, image: 'home-images/image4.svg', home: true },
+	{ id: 5, image: 'home-images/image5.svg', home: true },
+	{ id: 6, image: 'home-images/image6.svg', home: true },
+	{ id: 7, image: 'home-images/image7.svg', home: true },
+	{ id: 8, image: 'home-images/image8.svg', home: true },
+	{ id: 9, image: 'home-images/image9.svg' },
+	{ id: 10, image: 'home-images/image10.svg' },
+	{ id: 11, image: 'home-images/image11.svg' },
+	{ id: 12, image: 'home-images/image12.svg' },
+	{ id: 13, image: 'home-images/image13.svg' },
+	{ id: 14, image: 'home-images/image14.svg' },
+	{ id: 15, image: 'home-images/image15.svg' },
+	{ id: 16, image: 'home-images/image16.svg' },
+];

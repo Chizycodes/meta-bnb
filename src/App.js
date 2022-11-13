@@ -2,6 +2,7 @@ import Home from './pages/Home';
 import PlaceToStay from './pages/PlaceToStay';
 import NavBar from './components/NavBar';
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 				<Route path="/place-to-stay" element={<PlaceToStay />} />
 				<Route path="*" element={<Home />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }
