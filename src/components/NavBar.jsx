@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = ({ children }) => {
+	const closeRef = useRef();
+	const closeBar = () => {
+		closeRef.current.click();
+	};
 	return (
 		<div className="drawer">
 			<input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -53,25 +57,25 @@ const NavBar = ({ children }) => {
 				<ul className="menu p-4 w-80 bg-[#ffffff]">
 					<div className="flex items-center justify-between mx-3">
 						<img src="/logo.svg" alt="logo" className="w-[8rem] my-4" />
-						<label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+						<label htmlFor="my-drawer-3" ref={closeRef} className="btn btn-square btn-ghost">
 							<img src="/close.svg" alt="close" className="w-[34px]" />
 						</label>
 					</div>
 
-					<li className="">
+					<li className="" onClick={closeBar}>
 						<Link to="/" className="">
 							Home
 						</Link>
 					</li>
-					<li>
+					<li onClick={closeBar}>
 						<Link to="/place-to-stay">Place to stay</Link>
 					</li>
 
-					<li>
+					<li onClick={closeBar}>
 						<Link to="#">NFTs</Link>
 					</li>
 
-					<li>
+					<li onClick={closeBar}>
 						<Link to="#">Community</Link>
 					</li>
 				</ul>
